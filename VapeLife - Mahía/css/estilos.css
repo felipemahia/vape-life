@@ -141,10 +141,13 @@ p {
 .grid__promoChica1{
     grid-area: promoChica1;
     margin: 0%;
+    position: relative;
 }
 .grid__promoChica2{
     grid-area: promoChica2;
     margin: 0%;
+    position: relative;
+    top: -22px;
 }
 
 .grid-section {
@@ -169,13 +172,11 @@ p {
 .grid__atomizadores {
     display: grid;
     grid-area: grid__atomizadores;
-    border: 2px solid green;
 }
 
 .grid__eliquids {
     display: grid;
     grid-area: grid__liquids;
-    border: solid salmon;
 }
 
 .footerVape {
