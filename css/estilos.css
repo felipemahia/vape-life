@@ -166,7 +166,6 @@ p {
 .grid__equipos {
     display: grid;
     grid-area: grid__equipos;
-    border: 2px solid brown; /* todos los bordes se van, así que tranqui xD */
 }
 
 .grid__atomizadores {
@@ -235,7 +234,6 @@ p {
 #cerrarsidebar {
     display: none;
 }
-
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
