@@ -169,7 +169,7 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: solid black;
-    padding: 1rem; /* Tengo una duda acá, y es que según la clase de repaso, si yo saco este padding debería "juntarte" todo, que no quede ningún espaciado. Pero cuando lo saco, no pasa. Por qué? */
+    padding: 1rem;
     grid-template-areas: 
     "grid__equipos"
     "grid__atomizadores"
@@ -189,6 +189,10 @@ p {
 .grid__eliquids {
     display: grid;
     grid-area: grid__liquids;
+}
+
+.row {
+    flex-wrap: nowrap;
 }
 
 .footerVape {
@@ -291,6 +295,9 @@ p {
     #cerrarsidebar{
         display: none;
     }
+    .row {
+        flex-wrap: nowrap;
+    }
 }
 
 /* Movil */
@@ -350,5 +357,8 @@ p {
     }
     #aLaDerecha {
         display: none;
+    }
+    .row {
+        flex-wrap: nowrap;
     }
 }   
