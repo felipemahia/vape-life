@@ -291,6 +291,9 @@ p {
     #cerrarsidebar{
         display: none;
     }
+    #italica {
+        font-style: italic !important
+    }
 }
 
 /* Movil */
