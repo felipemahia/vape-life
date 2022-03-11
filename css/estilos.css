@@ -251,6 +251,9 @@ p {
 #cerrarsidebar {
     display: none;
 }
+.card-img-top{
+    width: auto;
+}
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
