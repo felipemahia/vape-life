@@ -247,6 +247,9 @@ p {
 .botonhamburguesa {
     display: none;
 }
+.row{
+    flex-wrap: nowrap;
+}
 
 #cerrarsidebar {
     display: none;
@@ -299,7 +302,10 @@ p {
         display: none;
     }
     .row {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+    }
+    .card-text {
+        display: none;
     }
 }
 
@@ -362,6 +368,9 @@ p {
         display: none;
     }
     .row {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+    }
+    .card-text {
+        display: none;
     }
 }   
