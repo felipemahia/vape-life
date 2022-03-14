@@ -247,6 +247,9 @@ p {
 #cerrarsidebar {
     display: none;
 }
+#negrita {
+    font-weight: bold;
+}
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -294,6 +297,7 @@ p {
     #italica {
         font-style: italic !important
     }
+
 }
 
 /* Movil */
@@ -352,6 +356,9 @@ p {
         display: none;
     }
     #aLaDerecha {
+        display: none;
+    }
+    #imagen-none {
         display: none;
     }
 }   
