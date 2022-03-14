@@ -297,6 +297,9 @@ p {
     #italica {
         font-style: italic !important
     }
+    .image-wrapper{
+        display: none
+    }
 
 }
 
@@ -358,7 +361,7 @@ p {
     #aLaDerecha {
         display: none;
     }
-    #imagen-none {
-        display: none;
+    .image-wrapper {
+        display: none
     }
 }   
