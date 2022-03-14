@@ -307,6 +307,13 @@ p {
     .card-text {
         display: none;
     }
+    #italica {
+        font-style: italic !important
+    }
+    .image-wrapper{
+        display: none
+    }
+
 }
 
 /* Movil */
@@ -372,5 +379,8 @@ p {
     }
     .card-text {
         display: none;
+    }
+    .image-wrapper {
+        display: none
     }
 }   
