@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VapeLife - Contactanos</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -28,7 +29,6 @@
                         <li><a href="Atomizadores.html">Atomiadores</a></li>
                         <li><a href="E-Liquids.html">E-Liquids</a></li>
                         <li><a href="Equipos.html">Equipos</a></li>
-                        <li><a href="Baterias.html">Baterias</a></li>
                         <li><a class="nav__item--activo" href="Contactanos.html">Contactanos</a></li>
                         <li id="cerrarsidebar"><a href="#">❌</a></li>
                     </ul>
@@ -37,37 +37,59 @@
         </header>
     </div>
 <section>
-    <fieldset>
-        <legend>Contacto:</legend>
-        <div>
-            <legend>Nombre</legend>
-            <input type="text" id="fullname" name="fullname" placeholder=""> 
-        </div>
-
-        <div>
-            <legend>Apellido</legend>
-            <input type="text" id="fullname" name="fullname" placeholder="">
-        </div>
-
-        <div>
-            <label for="edad">Número:</label>
-            <input type="number">
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center" id="header-legend">Contactenos</legend>
     
-        <div>
-            <label for="">E-mail:</label>
-            <input type="email">
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-user-alt"></i></i></span>
+                                <div class="col">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-user-alt"></i></i></span>
+                                <div class="col">
+                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-envelope"></i></span>
+                                <div class="col">
+                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-phone-alt"></i></i></span>
+                                <div class="col">
+                                    <input id="phone" name="phone" type="text" placeholder="Celular/Telefono" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Deja aquí tu mensaje y te responderemos en cuanto podamos" rows="7"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <label for="">Consultas:</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
-        </div>
-    </fieldset>
+    </div>
 </section>
     
 <div>

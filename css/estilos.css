@@ -285,6 +285,25 @@ p {
 #align-item-center{
     align-items: center;
 }
+
+.text-center {
+    color: white;
+    text-align: justify;
+}
+#header-legend{
+    background-image: url(../imagenes/wp4332186.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    /* border-radius: 2%; */
+    max-height: 8%;
+    z-index: 100;
+}
+.col-md-1{
+    color: black;
+}
 /* Tablet */
 @media screen and (max-width: 1024px) {
     body {
