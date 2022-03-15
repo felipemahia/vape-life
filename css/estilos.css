@@ -282,6 +282,9 @@ p {
 .card-text {
     size: 14px;
 }
+#align-item-center{
+    align-items: center;
+}
 /* Tablet */
 @media screen and (max-width: 1024px) {
     body {
