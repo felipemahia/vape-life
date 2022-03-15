@@ -11,7 +11,7 @@ body {
     background-size: cover;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1 h3 h4 h5 h6 {
     font-size: bold;
 }
 
@@ -59,6 +59,10 @@ ul {
 .header__navLista { 
     display: flex;
 }
+nav{
+    padding: 0px;
+    margin: 0px;
+}
 
 nav ul li a {
     background-color: rgb(226, 226, 226);
@@ -66,7 +70,8 @@ nav ul li a {
     position: relative;
     color: black;
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 0px;
     text-decoration: none;
 }
 .nav__item--activo {
@@ -112,7 +117,7 @@ nav ul li a:hover, nav ul li a:focus {
     box-shadow: 5px 10px 10px rgb(151, 151, 151);
 }
 
-h2, h3, h4, h6 {
+h3, h4, h6 {
     color: hsl(242, 95%, 7%);
     font-family: 'MetropolisRegular';
     font-size: bold;
@@ -122,11 +127,14 @@ h2, h3, h4, h6 {
 p { 
     color: rgb(43, 42, 104);
     font-family: 'MetropolisRegular';
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     text-align: center;
     margin-top: auto;
+}
+#italica{
+    font-style: italic;
 }
 
 .videoFlex {
@@ -192,7 +200,10 @@ p {
 }
 
 .row {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
 }
 
 .footerVape {
@@ -247,18 +258,29 @@ p {
 .botonhamburguesa {
     display: none;
 }
-.row{
-    flex-wrap: nowrap;
-}
 
 #cerrarsidebar {
     display: none;
+}
+.card{
+    overflow: hidden;
 }
 .card-img-top{
     width: auto;
 }
 .accordion-button{
     width: 100%;
+}
+#MarcasLiquids { /* Este es un h2 de la pagina eliquids */
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
+} 
+.card-title{
+    size: 20px;
+    text-align: center;
+}
+.card-text {
+    size: 14px;
 }
 /* Tablet */
 @media screen and (max-width: 1024px) {
