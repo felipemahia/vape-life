@@ -257,7 +257,9 @@ p {
 .card-img-top{
     width: auto;
 }
-
+.accordion-button{
+    width: 100%;
+}
 /* Tablet */
 @media screen and (max-width: 1024px) {
     body {
