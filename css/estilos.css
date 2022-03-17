@@ -1,3 +1,4 @@
+/* IMPORTANDO PARCIALES */
 * {
   margin: 8px;
   padding: 0;
@@ -9,11 +10,64 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+p {
+  color: #2b2a68;
+  font-family: 'MetropolisRegular';
+  font-weight: 100;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  margin-top: auto; }
+
 h1 h3 h4 h5 h6 {
   font-size: bold; }
 
 ul {
   list-style: none; }
+
+h3, h4, h6 {
+  color: #020123;
+  font-family: 'MetropolisRegular';
+  font-size: bold;
+  font-weight: bolder;
+  text-align: center; }
+
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0px;
+  margin: 0px; }
+
+#italica {
+  font-style: italic; }
+
+.card {
+  overflow: hidden; }
+
+.card-img-top {
+  width: auto; }
+
+.accordion-button {
+  width: 100%; }
+
+#MarcasLiquids {
+  /* Este es un h2 de la pagina eliquids */
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Montserrat', sans-serif; }
+
+.card-title {
+  size: 20px;
+  text-align: center; }
+
+.card-text {
+  size: 14px; }
+
+#align-item-center {
+  align-items: center; }
+
+.text-center {
+  color: white;
+  text-align: justify; }
 
 .header {
   height: 100px;
@@ -50,6 +104,17 @@ ul {
 
 .header__navLista {
   display: flex; }
+
+#header-legend {
+  background-image: url(../imagenes/wp4332186.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  /* border-radius: 2%; */
+  max-height: 8%;
+  z-index: 100; }
 
 nav {
   padding: 0px;
@@ -104,30 +169,6 @@ nav ul li a:hover, nav ul li a:focus {
   border-radius: 10px;
   box-shadow: 5px 10px 10px #979797; }
 
-h3, h4, h6 {
-  color: #020123;
-  font-family: 'MetropolisRegular';
-  font-size: bold;
-  font-weight: bolder;
-  text-align: center; }
-
-p {
-  color: #2b2a68;
-  font-family: 'MetropolisRegular';
-  font-weight: 100;
-  font-style: normal;
-  font-weight: 100;
-  text-align: center;
-  margin-top: auto; }
-
-#italica {
-  font-style: italic; }
-
-.videoFlex {
-  display: flex;
-  flex-direction: row;
-  justify-items: center; }
-
 .gridPromoContenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,12 +212,6 @@ p {
 .grid__eliquids {
   display: grid;
   grid-area: grid__liquids; }
-
-.row {
-  flex-wrap: wrap;
-  display: flex;
-  padding: 0px;
-  margin: 0px; }
 
 .footerVape {
   display: flex;
@@ -222,55 +257,12 @@ p {
   line-height: 0rem;
   align-items: center; }
 
-.botonhamburguesa {
-  display: none; }
-
 #cerrarsidebar {
   display: none; }
 
-.card {
-  overflow: hidden; }
+.botonhamburguesa {
+  display: none; }
 
-.card-img-top {
-  width: auto; }
-
-.accordion-button {
-  width: 100%; }
-
-#MarcasLiquids {
-  /* Este es un h2 de la pagina eliquids */
-  font-family: 'Great Vibes', cursive;
-  font-family: 'Montserrat', sans-serif; }
-
-.card-title {
-  size: 20px;
-  text-align: center; }
-
-.card-text {
-  size: 14px; }
-
-#align-item-center {
-  align-items: center; }
-
-.text-center {
-  color: white;
-  text-align: justify; }
-
-#header-legend {
-  background-image: url(../imagenes/wp4332186.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px;
-  /* border-radius: 2%; */
-  max-height: 8%;
-  z-index: 100; }
-
-.col-md-1 {
-  color: black; }
-
-/* Tablet */
 @media screen and (max-width: 1024px) {
   body {
     background-color: orange; }

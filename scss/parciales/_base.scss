@@ -1,0 +1,71 @@
+* {
+    margin: 8px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'MetropolisRegular';
+    background-image: url(../imagenes/Cloudy.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p { 
+    color: rgb(43, 42, 104);
+    font-family: 'MetropolisRegular';
+    font-weight: 100;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    margin-top: auto;
+}
+h1 h3 h4 h5 h6 {
+    font-size: bold;
+}
+
+ul {
+    list-style: none;
+}
+h3, h4, h6 {
+    color: hsl(242, 95%, 7%);
+    font-family: 'MetropolisRegular';
+    font-size: bold;
+    font-weight: bolder;
+    text-align: center;
+}
+.row {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+#italica{
+    font-style: italic;
+}
+.card{
+    overflow: hidden;
+}
+.card-img-top{
+    width: auto;
+}
+.accordion-button{
+    width: 100%;
+}
+#MarcasLiquids { /* Este es un h2 de la pagina eliquids */
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
+} 
+.card-title{
+    size: 20px;
+    text-align: center;
+}
+.card-text {
+    size: 14px;
+}
+#align-item-center{
+    align-items: center;
+}
+
+.text-center {
+    color: white;
+    text-align: justify;
+}

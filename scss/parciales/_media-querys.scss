@@ -1,0 +1,132 @@
+#cerrarsidebar {
+    display: none;
+}
+.botonhamburguesa {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: orange;
+    }
+    .header{
+        height: auto;
+        margin-top: 0%;
+        position: relative;
+    }
+    .header__contenedor {
+        flex-direction: column;
+        max-width: auto;
+    }
+    .header__navLista{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__logo {
+        max-width: 100px;
+    }
+    .textoEnlaceswpp {
+        font-size: 12px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .textoEnlacesfb {
+        font-size: 12px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #aLaDerecha {
+        font-size: 12px;
+    }
+    #footerVape__logofooter {
+        max-height: 85%;
+    }
+    .botonhamburguesa{
+        display: none;
+    }
+    #cerrarsidebar{
+        display: none;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .card-text {
+        display: none;
+    }
+    #italica {
+        font-style: italic !important
+    }
+    .image-wrapper{
+        display: none
+    }
+
+}
+
+/* Movil */
+@media screen and (max-width: 600px) {
+    .header__contenedor {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .header__logo{
+        max-width: 50%;
+    }
+     h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+
+    .botonhamburguesa { /* quise achicarlo, pero no supe como xD */
+        display: block;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0,5rem 0,5rem;
+    }
+    .header__navLista {
+        background-color: rgba(80, 80, 80, 0.425);
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        flex-direction: column;
+        justify-content: center;
+        gap: 0,2rem;
+        padding: 0,2rem;
+        transition: transform 0,5s;
+        z-index: 100;
+    }
+        
+    #sidebar:target {
+        transform: translateX(0 );
+    }
+    .cerrarsidebar{
+        display: inline-block;
+    }
+
+    .footerVape{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 1%;
+        justify-content: center; 
+    }
+    #footerVape__logofooter {
+        display: none;
+    }
+    #aLaDerecha {
+        display: none;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .card-text {
+        display: none;
+    }
+    .image-wrapper {
+        display: none
+    }
+}   
