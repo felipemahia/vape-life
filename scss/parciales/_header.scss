@@ -57,7 +57,7 @@ nav{
 }
 
 nav ul li a {
-    background-color: rgb(226, 226, 226);
+    background-color: $miVariable;
     border-radius: 5px;
     position: relative;
     color: black;
@@ -69,7 +69,7 @@ nav ul li a {
 .nav__item--activo {
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: $miVariable;
     display: inline-block;
     padding: 0.5rem 1rem;
 }
@@ -78,7 +78,7 @@ nav ul li a {
     background-image: linear-gradient(red, rgb(83, 10, 10));
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 5px;
+    background-size: 0% 7px;
     transition: background-size .3s;
 }
 nav ul li a:hover, nav ul li a:focus {
