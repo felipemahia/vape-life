@@ -79,25 +79,22 @@ ul {
   border-radius: 2%;
   max-height: 8%;
   z-index: 100; }
-
-.header__contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.header__logo {
-  display: flex;
-  width: 120px;
-  max-height: 120px;
-  display: block;
-  margin: 0 auto; }
-
-.header__navLista {
-  display: flex; }
+  .header__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .header__logo {
+    display: flex;
+    width: 120px;
+    max-height: 120px;
+    display: block;
+    margin: 0 auto; }
+  .header__navLista {
+    display: flex; }
 
 #header-legend {
   background-image: url(../imagenes/wp4332186.jpg);
@@ -258,8 +255,6 @@ nav ul li a:hover, nav ul li a:focus {
   display: none; }
 
 @media screen and (max-width: 1024px) {
-  body {
-    background-color: orange; }
   .header {
     height: auto;
     margin-top: 0%;
