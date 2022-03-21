@@ -20,7 +20,7 @@ p {
 }
 h1 h2 h3 h4 h5 h6 {
     font-size: bold;
-    color: $miVariable();
+    color: $color-gris;
 }
 
 ul {
@@ -61,6 +61,6 @@ ul {
 }
 
 .text-center {
-    color: $miVariable;
+    color: $color-gris;
     text-align: justify;
 }

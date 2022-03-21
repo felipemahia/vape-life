@@ -24,25 +24,25 @@
 }
 
 #textoBlanco {
-    color: $miVariable;
+    color: $color-gris;
 }
 
 #aLaDerecha {
-    color: $miVariable;
+    color: $color-gris;
     text-align: end;
 }
 
 .textoEnlacesfb {
     display: flex;
     flex-direction: row;
-    color: $miVariable;
+    color: $color-gris;
     line-height: 0rem;
     align-items: center;
 }
 .textoEnlaceswpp {
     display: flex;
     flex-direction: row;
-    color: $miVariable;
+    color: $color-gris;
     line-height: 0rem;
     align-items: center;
 }

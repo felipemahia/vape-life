@@ -19,18 +19,12 @@ p {
   text-align: center;
   margin-top: auto; }
 
-h1 h3 h4 h5 h6 {
-  font-size: bold; }
+h1 h2 h3 h4 h5 h6 {
+  font-size: bold;
+  color: #979797; }
 
 ul {
   list-style: none; }
-
-h3, h4, h6 {
-  color: #020123;
-  font-family: 'MetropolisRegular';
-  font-size: bold;
-  font-weight: bolder;
-  text-align: center; }
 
 .row {
   flex-wrap: wrap;
@@ -66,7 +60,7 @@ h3, h4, h6 {
   align-items: center; }
 
 .text-center {
-  color: white;
+  color: #979797;
   text-align: justify; }
 
 .header {
@@ -121,7 +115,7 @@ nav {
   margin: 0px; }
 
 nav ul li a {
-  background-color: #e2e2e2;
+  background-color: #979797;
   border-radius: 5px;
   position: relative;
   color: black;
@@ -133,7 +127,7 @@ nav ul li a {
 .nav__item--activo {
   background-color: black;
   border-radius: 5px;
-  color: white;
+  color: #979797;
   display: inline-block;
   padding: 0.5rem 1rem; }
 
@@ -142,7 +136,7 @@ nav ul li a {
   background-image: linear-gradient(red, #530a0a);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 5px;
+  background-size: 0% 7px;
   transition: background-size .3s; }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -237,23 +231,23 @@ nav ul li a:hover, nav ul li a:focus {
   margin: auto; }
 
 #textoBlanco {
-  color: white; }
+  color: #979797; }
 
 #aLaDerecha {
-  color: white;
+  color: #979797;
   text-align: end; }
 
 .textoEnlacesfb {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #979797;
   line-height: 0rem;
   align-items: center; }
 
 .textoEnlaceswpp {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: #979797;
   line-height: 0rem;
   align-items: center; }
 
