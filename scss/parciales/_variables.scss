@@ -1,1 +1,7 @@
 $color-gris: #979797;
+$bg-img: url(../../imagenes/Cloudy.svg);
+$modo: light; 
+
+@if $modo == dark { /* intenando cambiar color en caso de poner modo oscuro de chrome */
+    $bg-img: url(../../imagenes/Cloudy-black.svg)
+}

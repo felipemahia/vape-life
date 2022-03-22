@@ -6,7 +6,7 @@
 
 body {
   font-family: 'MetropolisRegular';
-  background-image: url(../imagenes/Cloudy.svg);
+  background-image: url(../../imagenes/Cloudy.svg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -19,7 +19,8 @@ p {
   text-align: center;
   margin-top: auto; }
 
-h1 h2 h3 h4 h5 h6 {
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
   font-size: bold;
   color: #979797; }
 
