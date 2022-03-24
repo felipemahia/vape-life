@@ -38,7 +38,13 @@
     }
 }
 
-
+ul{
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 #header-legend{
     background-image: url(../imagenes/wp4332186.jpg);

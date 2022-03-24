@@ -22,10 +22,12 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: bold;
-  color: #979797; }
+  color: #585858; }
 
-ul {
-  list-style: none; }
+.MiFuente {
+  font-family: 'brushield', sans-serif;
+  font-size: 45px;
+  /* color: rgb(32, 32, 32); */ }
 
 .row {
   flex-wrap: wrap;
@@ -96,6 +98,13 @@ ul {
     margin: 0 auto; }
   .header__navLista {
     display: flex; }
+
+ul {
+  list-style: none; }
+
+a:hover {
+  text-decoration: none;
+  color: white; }
 
 #header-legend {
   background-image: url(../imagenes/wp4332186.jpg);
