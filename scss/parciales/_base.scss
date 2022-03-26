@@ -26,9 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 .MiFuente{
     font-family: 'brushield', sans-serif;
     font-size: 45px;
-    /* color: rgb(32, 32, 32); */
 }
-
 .row {
     flex-wrap: wrap;
     display: flex;
@@ -47,10 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 .accordion-button{
     width: 100%;
 }
-#MarcasLiquids { /* Este es un h2 de la pagina eliquids */
-    font-family: 'Great Vibes', cursive;
-    font-family: 'Montserrat', sans-serif;
-} 
 .card-title{
     size: 20px;
     text-align: center;
@@ -65,4 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 .text-center {
     color: $color-gris;
     text-align: justify;
+}
+#cerrarsidebar {
+    display: none;
+}
+.botonhamburguesa {
+    display: none;
 }
