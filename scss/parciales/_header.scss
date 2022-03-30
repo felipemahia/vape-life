@@ -27,10 +27,6 @@
         margin: 0 auto;
         height: 100%;
         @include FlexColRow(space-between, center)
-/*         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; */
     }
     
     &__logo {
