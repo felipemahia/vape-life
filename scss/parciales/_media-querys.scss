@@ -49,7 +49,9 @@
     .image-wrapper{
         display: none
     }
-
+    .grid__promoChica2{
+        top: -10px;
+    }
 }
 
 /* Movil */
@@ -70,7 +72,7 @@
 
     .botonhamburguesa {
         display: block;
-        background-color: white;
+        background-color: $color-gris;
         border-radius: 5px;
         padding: 0,5rem 0,5rem;
     }
@@ -92,9 +94,6 @@
     }
     #cerrarsidebar {
         display: flex;
-    }
-    .botonhamburguesa {
-        display: none;
     }
         
     #sidebar:target {
@@ -124,5 +123,8 @@
     }
     .image-wrapper {
         display: none
+    }
+    .Promos{
+        display: none;
     }
 }   

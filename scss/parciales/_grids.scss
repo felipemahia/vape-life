@@ -1,9 +1,12 @@
 .gridPromoContenedor {
+    padding-left: 8rem;
+    padding-right: 8rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: stretch;
-    grid-column-gap: 8px;
+    position: relative;
+    grid-column-gap: 6px;
     grid-template-areas: 
     "promoUno promoChica1"
     "promoUno promoChica2";
@@ -12,6 +15,7 @@
 .grid__promoUno {
     grid-area: promoUno;
     margin: 0%;
+    position: relative;
 }
 
 .grid__promoChica1{
@@ -23,7 +27,6 @@
     grid-area: promoChica2;
     margin: 0%;
     position: relative;
-    top: -22px;
 }
 
 .grid-section {

@@ -118,9 +118,10 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 50px;
-  /* border-radius: 2%; */
+  border-radius: 2%;
   max-height: 8%;
-  z-index: 100; }
+  z-index: 100;
+  color: white; }
 
 nav {
   padding: 0px;
@@ -163,29 +164,33 @@ nav ul li a:hover, nav ul li a:focus {
 
 .promoChica1 {
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
   display: block;
   border-radius: 10px;
   box-shadow: 5px 10px 10px #979797; }
 
 .promoChica2 {
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
   display: block;
   border-radius: 10px;
   box-shadow: 5px 10px 10px #979797; }
 
 .gridPromoContenedor {
+  padding-left: 8rem;
+  padding-right: 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: stretch;
-  grid-column-gap: 8px;
+  position: relative;
+  grid-column-gap: 6px;
   grid-template-areas: "promoUno promoChica1" "promoUno promoChica2"; }
 
 .grid__promoUno {
   grid-area: promoUno;
-  margin: 0%; }
+  margin: 0%;
+  position: relative; }
 
 .grid__promoChica1 {
   grid-area: promoChica1;
@@ -195,8 +200,7 @@ nav ul li a:hover, nav ul li a:focus {
 .grid__promoChica2 {
   grid-area: promoChica2;
   margin: 0%;
-  position: relative;
-  top: -22px; }
+  position: relative; }
 
 .grid-section {
   display: grid;
@@ -298,7 +302,9 @@ nav ul li a:hover, nav ul li a:focus {
   #italica {
     font-style: italic !important; }
   .image-wrapper {
-    display: none; } }
+    display: none; }
+  .grid__promoChica2 {
+    top: -10px; } }
 
 /* Movil */
 @media screen and (max-width: 600px) {
@@ -313,7 +319,7 @@ nav ul li a:hover, nav ul li a:focus {
     font-size: 16px; }
   .botonhamburguesa {
     display: block;
-    background-color: white;
+    background-color: #979797;
     border-radius: 5px;
     padding: 0,5rem 0,5rem; }
   .header__navLista {
@@ -333,8 +339,6 @@ nav ul li a:hover, nav ul li a:focus {
     z-index: 100; }
   #cerrarsidebar {
     display: flex; }
-  .botonhamburguesa {
-    display: none; }
   #sidebar:target {
     transform: translateX(0); }
   .cerrarsidebar {
@@ -353,4 +357,6 @@ nav ul li a:hover, nav ul li a:focus {
   .card-text {
     display: none; }
   .image-wrapper {
+    display: none; }
+  .Promos {
     display: none; } }
