@@ -1,7 +1,7 @@
 /* IMPORTANDO PARCIALES */
 * {
-  margin: 8px;
-  padding: 0;
+  /*     margin: 8px;
+    padding: 0; */
   box-sizing: border-box; }
 
 body {
@@ -11,11 +11,10 @@ body {
   background-size: cover; }
 
 p {
-  color: #2b2a68;
+  color: #1f1f1f;
   font-family: 'MetropolisRegular';
   font-weight: 100;
   font-style: normal;
-  font-weight: 100;
   text-align: center;
   margin-top: auto; }
 
@@ -28,17 +27,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'brushield', sans-serif;
   font-size: 45px; }
 
+.separador {
+  background-image: url(../imagenes/wp4332186.jpg);
+  padding: 1rem;
+  color: white; }
+
 .row {
   flex-wrap: wrap;
   display: flex;
   padding: 0px;
   margin: 0px; }
 
-#italica {
-  font-style: italic; }
+.italica {
+  font-style: italic;
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem; }
 
 .card {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1rem; }
 
 .card-img-top {
   width: auto; }
@@ -53,6 +59,19 @@ h1, h2, h3, h4, h5, h6 {
 .card-text {
   size: 14px; }
 
+.cardflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.btn-primary {
+  font-size: 12px; }
+
+.btn-outline-danger {
+  font-size: 12px; }
+
 #align-item-center {
   align-items: center; }
 
@@ -65,6 +84,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .botonhamburguesa {
   display: none; }
+
+.card:hover {
+  transform: scale(1.01); }
+
+.container {
+  margin-bottom: 1.5rem;
+  padding: 1rem; }
 
 .header {
   height: 100px;
@@ -79,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 50px;
-  border-radius: 2%;
   max-height: 8%;
   z-index: 100; }
   .header__contenedor {
@@ -90,11 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    /*         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center; */ }
+    flex-direction: row; }
   .header__logo {
     display: flex;
     width: 120px;
@@ -130,12 +151,14 @@ nav {
 nav ul li a {
   background-color: #979797;
   border-radius: 5px;
+  align-self: center;
   position: relative;
   color: black;
   display: inline-block;
   padding: 0.2rem 0.2rem;
   margin-bottom: 0px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 6px; }
 
 .nav__item--activo {
   background-color: black;
@@ -167,14 +190,25 @@ nav ul li a:hover, nav ul li a:focus {
   max-width: 100%;
   display: block;
   border-radius: 10px;
-  box-shadow: 5px 10px 10px #979797; }
+  box-shadow: 5px 10px 10px #979797;
+  align-self: start; }
 
 .promoChica2 {
   display: flex;
   max-width: 100%;
   display: block;
   border-radius: 10px;
-  box-shadow: 5px 10px 10px #979797; }
+  box-shadow: 5px 10px 10px #979797;
+  align-self: end; }
+
+.promoUno:hover {
+  transform: scale(1.01); }
+
+.promoChica1:hover {
+  transform: scale(1.01); }
+
+.promoChica2:hover {
+  transform: scale(1.01); }
 
 .gridPromoContenedor {
   padding-left: 8rem;
@@ -184,7 +218,7 @@ nav ul li a:hover, nav ul li a:focus {
   grid-template-rows: 1fr 1fr;
   justify-content: stretch;
   position: relative;
-  grid-column-gap: 6px;
+  grid-column-gap: 16px;
   grid-template-areas: "promoUno promoChica1" "promoUno promoChica2"; }
 
 .grid__promoUno {
@@ -195,12 +229,14 @@ nav ul li a:hover, nav ul li a:focus {
 .grid__promoChica1 {
   grid-area: promoChica1;
   margin: 0%;
-  position: relative; }
+  position: relative;
+  align-self: start; }
 
 .grid__promoChica2 {
   grid-area: promoChica2;
   margin: 0%;
-  position: relative; }
+  position: relative;
+  align-self: end; }
 
 .grid-section {
   display: grid;
@@ -221,6 +257,9 @@ nav ul li a:hover, nav ul li a:focus {
 .grid__eliquids {
   display: grid;
   grid-area: grid__liquids; }
+
+.grid__item {
+  padding: 10px; }
 
 .footerVape {
   display: flex;
@@ -245,25 +284,15 @@ nav ul li a:hover, nav ul li a:focus {
   max-width: 100%;
   margin: auto; }
 
-#textoBlanco {
-  color: #979797; }
-
 #aLaDerecha {
   color: #979797;
   text-align: end; }
 
-.textoEnlacesfb {
+.textoEnlaces, a {
   display: flex;
   flex-direction: row;
   color: #979797;
-  line-height: 0rem;
-  align-items: center; }
-
-.textoEnlaceswpp {
-  display: flex;
-  flex-direction: row;
-  color: #979797;
-  line-height: 0rem;
+  line-height: 2rem;
   align-items: center; }
 
 @media screen and (max-width: 1024px) {
@@ -271,14 +300,14 @@ nav ul li a:hover, nav ul li a:focus {
     height: auto;
     margin-top: 0%;
     position: relative; }
-  .header__contenedor {
-    flex-direction: column;
-    max-width: auto; }
-  .header__navLista {
-    flex-wrap: wrap;
-    justify-content: center; }
-  .header__logo {
-    max-width: 100px; }
+    .header__contenedor {
+      flex-direction: column;
+      max-width: auto; }
+    .header__navLista {
+      flex-wrap: wrap;
+      justify-content: center; }
+    .header__logo {
+      max-width: 100px; }
   .textoEnlaceswpp {
     font-size: 12px;
     flex-wrap: wrap;
@@ -303,8 +332,16 @@ nav ul li a:hover, nav ul li a:focus {
     font-style: italic !important; }
   .image-wrapper {
     display: none; }
-  .grid__promoChica2 {
-    top: -10px; } }
+  .gridPromoContenedor {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: stretch;
+    position: relative;
+    grid-row-gap: 6px;
+    grid-template-areas: "promoUno promoUno" "promoChica1 promoChica1" "promoChica2 promoChica2"; } }
 
 /* Movil */
 @media screen and (max-width: 600px) {
@@ -317,11 +354,15 @@ nav ul li a:hover, nav ul li a:focus {
     font-size: 20px; }
   p {
     font-size: 16px; }
+  nav ul li a .botonhamburguesa {
+    display: none; }
   .botonhamburguesa {
     display: block;
     background-color: #979797;
-    border-radius: 5px;
-    padding: 0,5rem 0,5rem; }
+    color: white;
+    border-radius: 2px;
+    margin-left: 1rem;
+    padding: 0.5rem; }
   .header__navLista {
     background-color: rgba(80, 80, 80, 0.425);
     width: 80%;
@@ -335,7 +376,7 @@ nav ul li a:hover, nav ul li a:focus {
     justify-content: center;
     gap: 0,2rem;
     padding: 0,2rem;
-    transition: transform 0,5s;
+    transition: transform 0.5s;
     z-index: 100; }
   #cerrarsidebar {
     display: flex; }

@@ -3,17 +3,18 @@
         height: auto;
         margin-top: 0%;
         position: relative;
-    }
-    .header__contenedor {
-        flex-direction: column;
-        max-width: auto;
-    }
-    .header__navLista{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .header__logo {
-        max-width: 100px;
+        
+        &__contenedor {
+            flex-direction: column;
+            max-width: auto;
+        }
+        &__navLista{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo{
+            max-width: 100px;
+        }
     }
     .textoEnlaceswpp {
         font-size: 12px;
@@ -49,8 +50,19 @@
     .image-wrapper{
         display: none
     }
-    .grid__promoChica2{
-        top: -10px;
+    .gridPromoContenedor {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+        justify-content: stretch;
+        position: relative;
+        grid-row-gap: 6px;
+        grid-template-areas: 
+        "promoUno promoUno"
+        "promoChica1 promoChica1"
+        "promoChica2 promoChica2";
     }
 }
 
@@ -69,12 +81,16 @@
     p {
         font-size: 16px;
     }
-
+    nav ul li a .botonhamburguesa{
+        display: none;
+    }
     .botonhamburguesa {
         display: block;
         background-color: $color-gris;
-        border-radius: 5px;
-        padding: 0,5rem 0,5rem;
+        color: white;
+        border-radius: 2px;
+        margin-left: 1rem;
+        padding: 0.5rem;
     }
     .header__navLista {
         background-color: rgba(80, 80, 80, 0.425);
@@ -89,7 +105,7 @@
         justify-content: center;
         gap: 0,2rem;
         padding: 0,2rem;
-        transition: transform 0,5s;
+        transition: transform 0.5s;
         z-index: 100;
     }
     #cerrarsidebar {
@@ -102,7 +118,6 @@
     .cerrarsidebar{
         display: inline-block;
     }
-
     .footerVape{
         flex-wrap: wrap;
         flex-direction: column;

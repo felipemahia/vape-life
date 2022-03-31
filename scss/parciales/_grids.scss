@@ -6,7 +6,7 @@
     grid-template-rows: 1fr 1fr;
     justify-content: stretch;
     position: relative;
-    grid-column-gap: 6px;
+    grid-column-gap: 16px;
     grid-template-areas: 
     "promoUno promoChica1"
     "promoUno promoChica2";
@@ -22,11 +22,13 @@
     grid-area: promoChica1;
     margin: 0%;
     position: relative;
+    align-self: start;
 }
 .grid__promoChica2{
     grid-area: promoChica2;
     margin: 0%;
     position: relative;
+    align-self: end;
 }
 
 .grid-section {
@@ -54,4 +56,7 @@
 .grid__eliquids {
     display: grid;
     grid-area: grid__liquids;
+}
+.grid__item{
+    padding: 10px;
 }

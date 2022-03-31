@@ -1,6 +1,6 @@
 * {
-    margin: 8px;
-    padding: 0;
+/*     margin: 8px;
+    padding: 0; */
     box-sizing: border-box;
 }
 body {
@@ -10,11 +10,10 @@ body {
     background-size: cover;
 }
 p { 
-    color: rgb(43, 42, 104);
+    color: $color-gris-muyoscuro;
     font-family: 'MetropolisRegular';
     font-weight: 100;
     font-style: normal;
-    font-weight: 100;
     text-align: center;
     margin-top: auto;
 }
@@ -27,17 +26,24 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'brushield', sans-serif;
     font-size: 45px;
 }
+.separador{
+    background-image: url(../imagenes/wp4332186.jpg);
+    padding: 1rem;
+    color: white;
+}
 .row {
     flex-wrap: wrap;
     display: flex;
     padding: 0px;
     margin: 0px;
 }
-#italica{
+.italica{
     font-style: italic;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
 }
 .card{
     overflow: hidden;
+    padding: 1rem;
 }
 .card-img-top{
     width: auto;
@@ -52,6 +58,19 @@ h1, h2, h3, h4, h5, h6 {
 .card-text {
     size: 14px;
 }
+.cardflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary{
+    font-size: 12px;
+}
+.btn-outline-danger{
+    font-size: 12px;
+}
 #align-item-center{
     align-items: center;
 }
@@ -65,4 +84,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .botonhamburguesa {
     display: none;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.container {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
 }

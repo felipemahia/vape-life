@@ -19,7 +19,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
-    border-radius: 2%;
     max-height: 8%;
     z-index: 100;
     &__contenedor {
@@ -71,12 +70,14 @@ nav{
 nav ul li a {
     background-color: $color-gris;
     border-radius: 5px;
+    align-self: center;
     position: relative;
     color: black;
     display: inline-block;
     padding: 0.2rem 0.2rem;
     margin-bottom: 0px;
     text-decoration: none;
+    margin: 6px;
 }
 .nav__item--activo {
     background-color: rgb(0, 0, 0);

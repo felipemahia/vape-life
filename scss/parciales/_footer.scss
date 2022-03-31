@@ -23,26 +23,22 @@
     margin: auto;
 }
 
-#textoBlanco {
-    color: $color-gris;
-}
-
 #aLaDerecha {
     color: $color-gris;
     text-align: end;
 }
 
-.textoEnlacesfb {
+.textoEnlaces, a {
     display: flex;
     flex-direction: row;
     color: $color-gris;
-    line-height: 0rem;
+    line-height: 2rem;
     align-items: center;
 }
-.textoEnlaceswpp {
-    display: flex;
-    flex-direction: row;
-    color: $color-gris;
-    line-height: 0rem;
-    align-items: center;
-}
+// .textoEnlaceswpp {
+//     display: flex;
+//     flex-direction: row;
+//     color: $color-gris;
+//     line-height: 0rem;
+//     align-items: center;
+// }
