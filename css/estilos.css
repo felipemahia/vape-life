@@ -1,7 +1,6 @@
+@charset "UTF-8";
 /* IMPORTANDO PARCIALES */
 * {
-  /*     margin: 8px;
-    padding: 0; */
   box-sizing: border-box; }
 
 body {
@@ -30,7 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 .separador {
   background-image: url(../imagenes/wp4332186.jpg);
   padding: 1rem;
-  color: white; }
+  color: white;
+  width: 100%;
+  /* Acá me gustaría que este separador ocupe de punta a punta y que ignore ciertos paddings que están en el padre */ }
 
 .row {
   flex-wrap: wrap;
@@ -121,7 +122,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 120px;
     max-height: 120px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 8px; }
   .header__navLista {
     display: flex; }
 
@@ -282,7 +284,8 @@ nav ul li a:hover, nav ul li a:focus {
   display: flex;
   max-height: 100%;
   max-width: 100%;
-  margin: auto; }
+  margin: auto;
+  padding: 8px; }
 
 #aLaDerecha {
   color: #979797;
