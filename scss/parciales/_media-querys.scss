@@ -1,3 +1,4 @@
+/* Tablet */
 @media screen and (max-width: 1024px) {
     .header{
         height: auto;
@@ -17,17 +18,17 @@
         }
     }
     .textoEnlaceswpp {
-        font-size: 12px;
-        flex-wrap: wrap;
-        flex-direction: column;
+        font-size: 16px;
     }
     .textoEnlacesfb {
-        font-size: 12px;
-        flex-wrap: wrap;
-        flex-direction: column;
+        font-size: 16px;
+    }
+    .textoEnlaces{
+        font-size: 16px;
     }
     #aLaDerecha {
-        font-size: 12px;
+        font-size: 16px;
+        padding-left: 2rem;
     }
     #footerVape__logofooter {
         max-height: 85%;
@@ -47,8 +48,9 @@
     #italica {
         font-style: italic !important
     }
-    .image-wrapper{
-        display: none
+    .img-fluid{
+        max-width: 185px;
+        align-self: center;
     }
     .gridPromoContenedor {
         padding-left: 8rem;
@@ -65,9 +67,11 @@
         "promoChica2 promoChica2";
     }
 }
-
 /* Movil */
 @media screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+    }
     .header__contenedor {
         flex-wrap: wrap;
         flex-direction: row-reverse;
@@ -91,6 +95,7 @@
         border-radius: 2px;
         margin-left: 1rem;
         padding: 0.5rem;
+        z-index: 100;
     }
     .header__navLista {
         background-color: rgba(80, 80, 80, 0.425);
@@ -111,7 +116,9 @@
     #cerrarsidebar {
         display: flex;
     }
-        
+    .image-wrapper{
+        display: none
+    }    
     #sidebar:target {
         transform: translateX(0 );
     }
@@ -139,7 +146,31 @@
     .image-wrapper {
         display: none
     }
-    .Promos{
+    .promo{
+        display: none;
+    }
+    .italica{
+        display: none;
+    }
+    .accordion{
+        padding: 6px;
+    }
+    .textoEnlacesfb{
+        justify-content: center;
+        font-size: 12px;
+    }
+    .textoEnlaceswpp{
+        justify-content: center;
+        font-size: 12px;
+    }
+    .textoEnlaces{
+        justify-content: center;
+        line-height: 1rem
+    }
+    .form-group{
+        padding: 0px;
+    }
+    span{
         display: none;
     }
 }   

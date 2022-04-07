@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/* IMPORTANDO PARCIALES */
 * {
   box-sizing: border-box; }
 
@@ -22,6 +20,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: bold;
   color: #585858; }
 
+ul {
+  margin: 0px; }
+
+.container-fluid {
+  padding: 0px; }
+
 .MiFuente {
   font-family: 'brushield', sans-serif;
   font-size: 45px; }
@@ -29,9 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 .separador {
   background-image: url(../imagenes/wp4332186.jpg);
   padding: 1rem;
-  color: white;
-  width: 100%;
-  /* Acá me gustaría que este separador ocupe de punta a punta y que ignore ciertos paddings que están en el padre */ }
+  color: white; }
+
+.negrita {
+  font-weight: bold; }
 
 .row {
   flex-wrap: wrap;
@@ -39,39 +44,66 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 0px; }
 
+.row-cols-md-2 {
+  display: flex;
+  flex-wrap: wrap; }
+
 .italica {
   font-style: italic;
-  padding: 1.5rem 3.5rem 1.5rem 3.5rem; }
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  text-align: justify;
+  text-align-last: left;
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 4px solid #979797; }
 
 .card {
+  height: 100%;
   overflow: hidden;
-  padding: 1rem; }
+  padding: 1rem;
+  max-height: fit-content; }
 
 .card-img-top {
   width: auto; }
-
-.accordion-button {
-  width: 100%; }
 
 .card-title {
   size: 20px;
   text-align: center; }
 
 .card-text {
-  size: 14px; }
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left; }
 
 .cardflex {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
+
+.accordion {
+  padding: 0rem 6rem 2rem 6rem; }
+
+.accordion-button {
+  width: 100%;
+  padding: 10px; }
+
+.accordion-txt {
+  text-align: justify;
+  text-align-last: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 4px solid #979797; }
 
 .btn-primary {
   font-size: 12px; }
 
 .btn-outline-danger {
-  font-size: 12px; }
+  font-size: 12px;
+  line-height: auto; }
 
 #align-item-center {
   align-items: center; }
@@ -180,41 +212,39 @@ nav ul li a {
 nav ul li a:hover, nav ul li a:focus {
   background-size: 100% 2px; }
 
-.promoUno {
+.promo__Uno {
   display: flex;
   max-width: 100%;
   display: block;
-  box-shadow: 5px 10px 10px #979797;
-  border-radius: 10px; }
+  box-shadow: 5px 10px 10px #979797; }
 
-.promoChica1 {
+.promo__Chica1 {
   display: flex;
   max-width: 100%;
   display: block;
-  border-radius: 10px;
   box-shadow: 5px 10px 10px #979797;
   align-self: start; }
 
-.promoChica2 {
+.promo__Chica2 {
   display: flex;
   max-width: 100%;
   display: block;
-  border-radius: 10px;
   box-shadow: 5px 10px 10px #979797;
   align-self: end; }
 
-.promoUno:hover {
+.promo__Uno:hover {
   transform: scale(1.01); }
 
-.promoChica1:hover {
+.promo__Chica1:hover {
   transform: scale(1.01); }
 
-.promoChica2:hover {
+.promo__Chica2:hover {
   transform: scale(1.01); }
 
 .gridPromoContenedor {
   padding-left: 8rem;
   padding-right: 8rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -289,15 +319,21 @@ nav ul li a:hover, nav ul li a:focus {
 
 #aLaDerecha {
   color: #979797;
-  text-align: end; }
+  text-align: end;
+  padding-right: 2rem; }
 
 .textoEnlaces, a {
   display: flex;
   flex-direction: row;
   color: #979797;
   line-height: 2rem;
-  align-items: center; }
+  align-items: center;
+  margin: none; }
 
+#iconos {
+  list-style: none; }
+
+/* Tablet */
 @media screen and (max-width: 1024px) {
   .header {
     height: auto;
@@ -312,15 +348,14 @@ nav ul li a:hover, nav ul li a:focus {
     .header__logo {
       max-width: 100px; }
   .textoEnlaceswpp {
-    font-size: 12px;
-    flex-wrap: wrap;
-    flex-direction: column; }
+    font-size: 16px; }
   .textoEnlacesfb {
-    font-size: 12px;
-    flex-wrap: wrap;
-    flex-direction: column; }
+    font-size: 16px; }
+  .textoEnlaces {
+    font-size: 16px; }
   #aLaDerecha {
-    font-size: 12px; }
+    font-size: 16px;
+    padding-left: 2rem; }
   #footerVape__logofooter {
     max-height: 85%; }
   .botonhamburguesa {
@@ -333,8 +368,9 @@ nav ul li a:hover, nav ul li a:focus {
     display: none; }
   #italica {
     font-style: italic !important; }
-  .image-wrapper {
-    display: none; }
+  .img-fluid {
+    max-width: 185px;
+    align-self: center; }
   .gridPromoContenedor {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -348,6 +384,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 /* Movil */
 @media screen and (max-width: 600px) {
+  .header {
+    width: 100%; }
   .header__contenedor {
     flex-wrap: wrap;
     flex-direction: row-reverse; }
@@ -365,7 +403,8 @@ nav ul li a:hover, nav ul li a:focus {
     color: white;
     border-radius: 2px;
     margin-left: 1rem;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    z-index: 100; }
   .header__navLista {
     background-color: rgba(80, 80, 80, 0.425);
     width: 80%;
@@ -383,6 +422,8 @@ nav ul li a:hover, nav ul li a:focus {
     z-index: 100; }
   #cerrarsidebar {
     display: flex; }
+  .image-wrapper {
+    display: none; }
   #sidebar:target {
     transform: translateX(0); }
   .cerrarsidebar {
@@ -402,5 +443,22 @@ nav ul li a:hover, nav ul li a:focus {
     display: none; }
   .image-wrapper {
     display: none; }
-  .Promos {
+  .promo {
+    display: none; }
+  .italica {
+    display: none; }
+  .accordion {
+    padding: 6px; }
+  .textoEnlacesfb {
+    justify-content: center;
+    font-size: 12px; }
+  .textoEnlaceswpp {
+    justify-content: center;
+    font-size: 12px; }
+  .textoEnlaces {
+    justify-content: center;
+    line-height: 1rem; }
+  .form-group {
+    padding: 0px; }
+  span {
     display: none; } }

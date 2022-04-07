@@ -27,6 +27,7 @@
 #aLaDerecha {
     color: $color-gris;
     text-align: end;
+    padding-right: 2rem;
 }
 
 .textoEnlaces, a {
@@ -35,4 +36,8 @@
     color: $color-gris;
     line-height: 2rem;
     align-items: center;
+    margin: none;
+}
+#iconos{
+    list-style: none;
 }
