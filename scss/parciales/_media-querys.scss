@@ -48,9 +48,21 @@
     #italica {
         font-style: italic !important
     }
+    .accordion-txt{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .row-align-items-center{
+        flex-direction: column;
+    }
     .img-fluid{
         max-width: 185px;
         align-self: center;
+        /* TENGO QUE CENTRAR ESTO PARA TABLET*/
     }
     .gridPromoContenedor {
         padding-left: 8rem;
@@ -144,7 +156,8 @@
         display: none;
     }
     .image-wrapper {
-        display: none
+        display: flex;
+        justify-content: center;
     }
     .promo{
         display: none;
@@ -154,6 +167,11 @@
     }
     .accordion{
         padding: 6px;
+    }
+    .accordion-txt{
+        display: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .textoEnlacesfb{
         justify-content: center;
@@ -170,7 +188,18 @@
     .form-group{
         padding: 0px;
     }
-    span{
-        display: none;
+    .solomobile{
+        display: flex;
+        justify-content: space-around;
+    }
+    h3{
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-gris-muyoscuro;
+    }
+    h3 .glitch{
+        font-weight: 800;
     }
 }   

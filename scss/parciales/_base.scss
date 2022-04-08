@@ -50,7 +50,7 @@ ul{
 }
 .italica{
     font-style: italic;
-    padding: 1.5rem 5rem 1.5rem 5rem;
+    padding: 1.5rem 8rem 1.5rem 8rem;
     text-align: justify;
     text-align-last: left;
     column-count: 2;
@@ -93,8 +93,8 @@ ul{
 .accordion-txt{
     text-align: justify;
     text-align-last: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     column-count: 2;
     column-gap: 2rem;
     column-rule:4px solid $color-gris;
@@ -123,8 +123,24 @@ ul{
 }
 .card:hover{
     transform: scale(1.01);
+    border: solid $color-gris-muyoscuro;
 }
 .container {
     margin-bottom: 1.5rem;
     padding: 1rem;
+}
+#centrar{
+    font-style: italic;
+    padding: 1.5rem 8rem 1.5rem 8rem;
+    text-align: justify;
+    text-align-last: left;
+    column-count: 1;
+    column-gap: 2rem;
+    column-rule:4px solid $color-gris;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+.solomobile{
+    display: none;
 }

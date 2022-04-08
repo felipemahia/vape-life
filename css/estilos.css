@@ -50,7 +50,7 @@ ul {
 
 .italica {
   font-style: italic;
-  padding: 1.5rem 5rem 1.5rem 5rem;
+  padding: 1.5rem 8rem 1.5rem 8rem;
   text-align: justify;
   text-align-last: left;
   column-count: 2;
@@ -92,8 +92,8 @@ ul {
 .accordion-txt {
   text-align: justify;
   text-align-last: left;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   column-count: 2;
   column-gap: 2rem;
   column-rule: 4px solid #979797; }
@@ -119,11 +119,27 @@ ul {
   display: none; }
 
 .card:hover {
-  transform: scale(1.01); }
+  transform: scale(1.01);
+  border: solid #1f1f1f; }
 
 .container {
   margin-bottom: 1.5rem;
   padding: 1rem; }
+
+#centrar {
+  font-style: italic;
+  padding: 1.5rem 8rem 1.5rem 8rem;
+  text-align: justify;
+  text-align-last: left;
+  column-count: 1;
+  column-gap: 2rem;
+  column-rule: 4px solid #979797;
+  align-items: center;
+  align-self: center;
+  align-content: center; }
+
+.solomobile {
+  display: none; }
 
 .header {
   height: 100px;
@@ -368,9 +384,18 @@ nav ul li a:hover, nav ul li a:focus {
     display: none; }
   #italica {
     font-style: italic !important; }
+  .accordion-txt {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .image-wrapper {
+    display: flex;
+    justify-content: center; }
+  .row-align-items-center {
+    flex-direction: column; }
   .img-fluid {
     max-width: 185px;
-    align-self: center; }
+    align-self: center;
+    /* TENGO QUE CENTRAR ESTO PARA TABLET*/ }
   .gridPromoContenedor {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -442,13 +467,18 @@ nav ul li a:hover, nav ul li a:focus {
   .card-text {
     display: none; }
   .image-wrapper {
-    display: none; }
+    display: flex;
+    justify-content: center; }
   .promo {
     display: none; }
   .italica {
     display: none; }
   .accordion {
     padding: 6px; }
+  .accordion-txt {
+    display: none;
+    padding-left: 1rem;
+    padding-right: 1rem; }
   .textoEnlacesfb {
     justify-content: center;
     font-size: 12px; }
@@ -460,5 +490,14 @@ nav ul li a:hover, nav ul li a:focus {
     line-height: 1rem; }
   .form-group {
     padding: 0px; }
-  span {
-    display: none; } }
+  .solomobile {
+    display: flex;
+    justify-content: space-around; }
+  h3 {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1f1f1f; }
+  h3 .glitch {
+    font-weight: 800; } }
