@@ -66,6 +66,13 @@ ul{
     column-gap: 2rem;
     column-rule:4px solid $color-gris;
 }
+.img-fluid{
+    transition: transform 1s;
+}
+.img-fluid:hover{
+    transform: scale(1.1);
+
+}
 .card{
     height: $card-height;
     overflow: hidden;
@@ -91,7 +98,11 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
-
+// .card:hover{
+//     z-index: 100;
+//     transform: scale(1.01);
+//     border: solid $color-gris-muyoscuro;
+// }
 .accordion{
     padding: 0rem 6rem 2rem 6rem;
 }
@@ -129,11 +140,6 @@ ul{
 }
 .botonhamburguesa {
     display: none;
-}
-.card:hover{
-    z-index: 100;
-    transform: scale(1.01);
-    border: solid $color-gris-muyoscuro;
 }
 .container {
     margin-bottom: 1.5rem;

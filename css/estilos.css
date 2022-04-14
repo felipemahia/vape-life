@@ -66,6 +66,12 @@ ul {
   column-gap: 2rem;
   column-rule: 4px solid #979797; }
 
+.img-fluid {
+  transition: transform 1s; }
+
+.img-fluid:hover {
+  transform: scale(1.1); }
+
 .card {
   height: 100%;
   overflow: hidden;
@@ -126,11 +132,6 @@ ul {
 
 .botonhamburguesa {
   display: none; }
-
-.card:hover {
-  z-index: 100;
-  transform: scale(1.01);
-  border: solid #1f1f1f; }
 
 .container {
   margin-bottom: 1.5rem;
@@ -319,6 +320,13 @@ nav ul li a:hover, nav ul li a:focus {
 .grid__item {
   padding: 10px; }
 
+/* @mixin FlexColRow ($eje-principal, $eje-secundario) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+    flex-direction: row;
+} */
 .footerVape {
   display: flex;
   height: 100px;
@@ -335,18 +343,20 @@ nav ul li a:hover, nav ul li a:focus {
   max-height: 5%;
   z-index: 100;
   justify-content: space-between; }
-
-#footerVape__logofooter {
-  display: flex;
-  max-height: 100%;
-  max-width: 100%;
-  margin: auto;
-  padding: 8px; }
+  .footerVape__logofooter {
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem 2rem 1rem 0rem; }
 
 #aLaDerecha {
-  color: #979797;
   text-align: end;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  align-self: flex-end; }
+
+.copyright {
+  color: #979797; }
 
 .textoEnlaces, a {
   display: flex;
@@ -383,15 +393,20 @@ nav ul li a:hover, nav ul li a:focus {
     font-size: 16px;
     padding-left: 2rem; }
   #footerVape__logofooter {
-    max-height: 85%; }
+    max-height: 100%; }
   .botonhamburguesa {
     display: none; }
   #cerrarsidebar {
     display: none; }
   .row {
     flex-wrap: wrap; }
+  .card-wraper {
+    display: flex;
+    flex-direction: column; }
   .card-text {
     display: none; }
+  .accordion-txt {
+    font-size: 14px; }
   #italica {
     font-style: italic !important; }
   .accordion-txt {
@@ -404,8 +419,7 @@ nav ul li a:hover, nav ul li a:focus {
     flex-direction: column; }
   .img-fluid {
     max-width: 185px;
-    align-self: center;
-    /* TENGO QUE CENTRAR ESTO PARA TABLET*/ }
+    align-self: center; }
   .gridPromoContenedor {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -415,7 +429,9 @@ nav ul li a:hover, nav ul li a:focus {
     justify-content: stretch;
     position: relative;
     grid-row-gap: 6px;
-    grid-template-areas: "promoUno promoUno" "promoChica1 promoChica1" "promoChica2 promoChica2"; } }
+    grid-template-areas: "promoUno promoUno" "promoChica1 promoChica1" "promoChica2 promoChica2"; }
+  .italica {
+    padding: 1.5rem 3rem 1.5rem 3rem; } }
 
 /* Movil */
 @media screen and (max-width: 600px) {

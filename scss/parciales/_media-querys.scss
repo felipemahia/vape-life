@@ -31,7 +31,7 @@
         padding-left: 2rem;
     }
     #footerVape__logofooter {
-        max-height: 85%;
+        max-height: 100%;
     }
     .botonhamburguesa{
         display: none;
@@ -42,8 +42,15 @@
     .row {
         flex-wrap: wrap;
     }
+    .card-wraper{
+        display: flex;
+        flex-direction: column;
+    }
     .card-text {
         display: none;
+    }
+    .accordion-txt{
+        font-size: 14px;
     }
     #italica {
         font-style: italic !important
@@ -62,7 +69,6 @@
     .img-fluid{
         max-width: 185px;
         align-self: center;
-        /* TENGO QUE CENTRAR ESTO PARA TABLET*/
     }
     .gridPromoContenedor {
         padding-left: 8rem;
@@ -77,6 +83,9 @@
         "promoUno promoUno"
         "promoChica1 promoChica1"
         "promoChica2 promoChica2";
+    }
+    .italica{
+        padding: 1.5rem 3rem 1.5rem 3rem;
     }
 }
 /* Movil */

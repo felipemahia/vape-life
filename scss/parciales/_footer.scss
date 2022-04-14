@@ -1,3 +1,11 @@
+/* @mixin FlexColRow ($eje-principal, $eje-secundario) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+    flex-direction: row;
+} */
+
 .footerVape {
     display: flex;
     height: 100px;
@@ -14,20 +22,23 @@
     max-height: 5%;
     z-index: 100;
     justify-content: space-between;
-}
 
-#footerVape__logofooter{
-    display: flex;
-    max-height: 100%;
-    max-width: 100%;
-    margin: auto;
-    padding: 8px;
+    &__logofooter {
+        display: flex;
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;
+        padding: 1rem 2rem 1rem 0rem;
+        }
 }
 
 #aLaDerecha {
-    color: $color-gris;
     text-align: end;
     padding-right: 2rem;
+    align-self: flex-end;
+}
+.copyright{
+    color: $color-gris;
 }
 
 .textoEnlaces, a {
