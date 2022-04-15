@@ -87,6 +87,11 @@
     .italica{
         padding: 1.5rem 3rem 1.5rem 3rem;
     }
+    .col-auto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -103,7 +108,7 @@
         }
         
         &__navLista {
-            background-color: rgba(80, 80, 80, 0.425);
+            background-color: rgba(80, 80, 80, 0.700);
             width: 80%;
             max-width: 400px;
             height: 100vh;
@@ -113,8 +118,6 @@
             transform: translateX(-100%);
             flex-direction: column;
             justify-content: center;
-            gap: 0,2rem;
-            padding: 0,2rem;
             transition: transform 0.5s;
             z-index: 100;
         }
@@ -197,9 +200,10 @@
         justify-content: center;
         font-size: 12px;
     }
-    .textoEnlaces{
+    .textoEnlaces, a{
         justify-content: center;
-        line-height: 1rem
+        line-height: 1.5rem;
+        margin: 0px;
     }
     .form-group{
         padding: 0px;
@@ -225,5 +229,8 @@
     #iconos{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .col-auto{
+        display: none;
     }
 }   

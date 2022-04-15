@@ -20,9 +20,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: bold;
     color: $color-gris-oscuro;
 }
-ul{
-    margin: 0px;
-}
 .container-fluid{
     padding: 0px;
 }
@@ -83,7 +80,7 @@ ul{
 .card-text {
     font-size: 16px;
     text-align: justify;
-    text-align-last: left;
+    text-align-last: center;
 }
 .cardflex{
     display: flex;
@@ -142,7 +139,7 @@ ul{
     font-style: italic;
     padding: 1.5rem 8rem 1.5rem 8rem;
     text-align: justify;
-    text-align-last: left;
+    text-align-last: center;
     column-count: 1;
     column-gap: 2rem;
     column-rule:4px solid $color-gris;
@@ -152,4 +149,7 @@ ul{
 }
 .solomobile{
     display: none;
+}
+.iframecontacto{
+    padding: 1rem;
 }
