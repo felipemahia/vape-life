@@ -367,7 +367,6 @@ nav ul li a:hover, nav ul li a:focus {
 #iconos {
   list-style: none; }
 
-/* Tablet */
 @media screen and (max-width: 1024px) {
   .header {
     height: auto;
@@ -431,7 +430,6 @@ nav ul li a:hover, nav ul li a:focus {
   .italica {
     padding: 1.5rem 3rem 1.5rem 3rem; } }
 
-/* Movil */
 @media screen and (max-width: 600px) {
   .header {
     width: 100%; }
@@ -484,9 +482,6 @@ nav ul li a:hover, nav ul li a:focus {
     justify-content: center; }
     .footerVape__logofooter {
       display: none; }
-  /*     .footerVape__logofooter {
-        display: none;
-    } */
   #aLaDerecha {
     display: none; }
   #centrar {
