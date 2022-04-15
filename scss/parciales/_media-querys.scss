@@ -149,17 +149,23 @@
     .cerrarsidebar{
         display: inline-block;
     }
-    .footerVape{
+    .footerVape {
         flex-wrap: wrap;
         flex-direction: column;
         height: 1%;
         justify-content: center; 
         
-        &__logofooter {
+/*         &__logofooter {
             display: none;
-        }
+        } */
+    }
+    .footerVape__logofooter {
+        display: none;
     }
     #aLaDerecha {
+        display: none;
+    }
+    #centrar{
         display: none;
     }
     .row {
