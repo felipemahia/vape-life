@@ -41,12 +41,6 @@ ul {
 .col, .col-md-3, .col-md-4, .col-md-6 {
   margin-bottom: 20px; }
 
-/* .col-md-3{
-    margin-bottom: 20px;
-}
-.col-md-4{
-    margin-bottom: 20px;
-} */
 .row {
   flex-wrap: wrap;
   display: flex;
@@ -487,12 +481,12 @@ nav ul li a:hover, nav ul li a:focus {
     flex-wrap: wrap;
     flex-direction: column;
     height: 1%;
-    justify-content: center;
-    /*         &__logofooter {
-            display: none;
-        } */ }
-  .footerVape__logofooter {
-    display: none; }
+    justify-content: center; }
+    .footerVape__logofooter {
+      display: none; }
+  /*     .footerVape__logofooter {
+        display: none;
+    } */
   #aLaDerecha {
     display: none; }
   #centrar {
