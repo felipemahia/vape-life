@@ -92,13 +92,32 @@
 @media screen and (max-width: 600px) {
     .header{
         width: 100%;
-    }
-    .header__contenedor {
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-    }
-    .header__logo{
-        max-width: 50%;
+        
+        &__contenedor {
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+        
+        &__logo{
+            max-width: 50%;
+        }
+        
+        &__navLista {
+            background-color: rgba(80, 80, 80, 0.425);
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            flex-direction: column;
+            justify-content: center;
+            gap: 0,2rem;
+            padding: 0,2rem;
+            transition: transform 0.5s;
+            z-index: 100;
+        }
     }
      h2 {
         font-size: 20px;
@@ -118,22 +137,6 @@
         padding: 0.5rem;
         z-index: 100;
     }
-    .header__navLista {
-        background-color: rgba(80, 80, 80, 0.425);
-        width: 80%;
-        max-width: 400px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        flex-direction: column;
-        justify-content: center;
-        gap: 0,2rem;
-        padding: 0,2rem;
-        transition: transform 0.5s;
-        z-index: 100;
-    }
     #cerrarsidebar {
         display: flex;
     }
@@ -151,9 +154,10 @@
         flex-direction: column;
         height: 1%;
         justify-content: center; 
-    }
-    #footerVape__logofooter {
-        display: none;
+        
+        &__logofooter {
+            display: none;
+        }
     }
     #aLaDerecha {
         display: none;

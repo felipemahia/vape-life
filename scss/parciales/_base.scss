@@ -98,11 +98,7 @@ ul{
     justify-content: space-around;
     align-items: center;
 }
-// .card:hover{
-//     z-index: 100;
-//     transform: scale(1.01);
-//     border: solid $color-gris-muyoscuro;
-// }
+
 .accordion{
     padding: 0rem 6rem 2rem 6rem;
 }
@@ -119,7 +115,10 @@ ul{
     column-gap: 2rem;
     column-rule:4px solid $color-gris;
 }
-
+.accordion-header{
+    text-align: center;
+    color: $color-gris-muyoscuro;
+}
 .btn-primary{
     font-size: 12px;
 }
